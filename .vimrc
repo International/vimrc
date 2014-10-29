@@ -1,6 +1,6 @@
 set nocompatible
 
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle "digitaltoad/vim-jade"

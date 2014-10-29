@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/john/code/heytutor'
+let g:netrw_dirhist_2='/home/john/code/ht_puppet'
+let g:netrw_dirhist_3='/home/john/.rvm/gems/ruby-1.9.3-p429@goliath-scheduling/gems/goliath-1.0.3'
+let g:netrw_dirhist_4='/home/john/code/mactrac/app/controllers'
+let g:netrw_dirhist_5='/home/john/code/learnexperts_scheduling/app/models'
+let g:netrw_dirhist_6='/home/john/code/learnexperts_scheduling/app'
+let g:netrw_dirhist_7='/home/john/code/learnexperts_scheduling'
+let g:netrw_dirhist_8='/home/john/code/learnexperts_scheduling/lib'
