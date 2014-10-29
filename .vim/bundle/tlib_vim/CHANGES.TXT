@@ -420,3 +420,115 @@ version: "1.05"
   - tlib#dir#NativeName(dirname)
   MD5 checksum: 493f9beca44374de386f20d1613155e3
 
+  - Rename g:tlib_debug to g:tlib#debug
+  - Renamed g:tlib_sortprefs_threshold to g:tlib#input#sortprefs_threshold
+  - Renamed g:tlib#input#livesearch_threshold
+  - Renamed g:tlib_inputlist_match to g:tlib#input#filter_mode
+  - Renamed g:tlib_inputlist_higroup to g:tlib#input#higroup
+  - Renamed g:tlib#debug
+  - Moved g:tlib_pick_last_item
+  - Renamed g:tlib#input#and, g:tlib#input#or, g:tlib#input#not
+  - Moved g:tlib_numeric_chars to autoload/tlib/input.vim
+  - Renamed g:tlib#input#keyagents_InputList_s, g:tlib#input#keyagents_InputList_m, g:tlib#input#handlers_EditList
+  - Moved g:tlib_inputlist_pct, g:tlib_inputlist_width_filename, g:tlib_inputlist_filename_indicators, g:tlib_inputlist_shortmessage to autoload/tlib/World.vim
+  - Renamed tlib#input#pick_last_item (2)
+  - prototype.SelectItemsByNames()
+  - filtered_items: Restricted view
+  - prototype.PrintLines()
+  - Restricted view (2)
+  - Moved g:tlib_scroll_lines to autoload/tlib/agent.vim
+  - prototype.PrintLines() (2)
+  - tlib#input: Improved handling of popup menu (allows submenu)
+  - tlib#input: Allow mods in keys
+  - Moved g:tlib_scratch_pos to autoload/tlib/scratch.vim
+  - Moved g:tlib_tags_extra, g:tlib_tag_substitute to autoload/tlib/tag.vim
+  - tlib#agent#CompleteAgentNames(): Respect Arglead
+  - Move g:tlib_viewline_position to autoload/tlib/buffer.vim
+  - Move g:tlib_cache to autoload/tlib/cache.vim
+  - Renamed g:tlib_filename_sep to g:tlib#dir#sep
+  - prototype.UseScratch(): Set b:tlib_world
+  - tlib#input: f9 toggles resticted view
+  - tlib#input: next_agent, next_eval
+  - tlib#input: Revised use of the popup menu
+  - tlib#input: Disable popup menu for gui_gtk
+  - tlib#input: Re-enabled the popup menu for gtk gui
+  - tlib#input: FIX popup menu on Windows
+  - Renamed g:tlib_numeric_chars to g:tlib#input#numeric_chars (disabled per-buffer values) (fixes #35)
+  - Improve scratch list
+  - New: tlib#grep
+  - Merge branch 'master' of https://github.com/bruno-/tlib_vim into pull16
+  - g:tlib_scratch_hidden: Configure how to "hide" the scratch buffer
+  - tlib#grep#Do: don't escape "*" in patterns
+  - Optimize use of visible scratch buffers
+  - World.scratch_hidden parameter
+  - scratch: Always use keepalt & keepjumps
+  MD5 checksum: 2e40449c47dc606ccef57aa0b1e22e8e
+version: "1.06"
+
+version: "1.07"
+  - Help template
+  - prototype.Highlight_filename(): Use matchstr() instead of fnamemodify()
+  - Display buffer-related filename indicators only if g:tlib_inputlist_filename_indicators is true
+  - tlib#file#Join(): strip_slashes defaults to 1
+  MD5 checksum: 6c8fa96fd3747be05df848ee93dd789b
+
+version: "1.08"
+  - list#input: Improved support for file indicators (closes #17)
+  - tlib#char#Get(): Optionally, also return mod
+  - tlib#input#ListW: Use #DisplayFormat(world.list)
+  - Renamed cnfx filter to glob & minor filter-related enhancements
+  - list#input: Make help available as command; help cannot be called via ?
+  - list#input: Improved help message
+  - list#input: Support Home & End keys
+  - list#input: Added glob filter
+  - tlib#agent#ShowInfo: Show full filename
+  - tlib#cmd#BrowseOutputWithCallback: Support calling callback with multiple results
+  - tlib#cmd#ParseScriptname: Properly parse results from :scriptnames
+  - tlib#tab#Set()
+  - Prepare for proper handling of scratch_split == -1
+  - tlib#vim#CopyFunction()
+  - tlib#cache#Value(): If generator is empty, use the optional argument as start value
+  - tlib#persistent#Get() refers to tlib#cache#Get()
+  MD5 checksum: 459ec620168d1ae9b18c69eb3f991832
+
+  - tlib#cache#Filename(): Use sha256() for VIM >= 7.4
+  - tlib#cache#Value(): Undo previous hack
+  - tlib#list#Uniq(): option to remove empty values
+  - tlib#cache#MTime(); tlib#persistent#Save() calls tlib#cache#Save()
+  - tlib#input#ListW: Temporarily set noshowmode
+  - tlib#list#Uniq(): Fix handling of empty items
+  - lis picker: Remove <C-Space> from help
+  - tlib#list#Uniq(): Implementation based on syntastic#util#unique(list) by scrooloose
+  MD5 checksum: b5fb4107d63930c2c8b1f0f6b3a7ff07
+version: "1.09"
+
+  - tlib#cache#Filename(): Use sha256() for VIM >= 7.4
+  - tlib#cache#Value(): Undo previous hack
+  - tlib#list#Uniq(): option to remove empty values
+  - tlib#cache#MTime(); tlib#persistent#Save() calls tlib#cache#Save()
+  - tlib#input#ListW: Temporarily set noshowmode
+  - tlib#list#Uniq(): Fix handling of empty items
+  - lis picker: Remove <C-Space> from help
+  - tlib#list#Uniq(): Implementation based on syntastic#util#unique(list) by scrooloose
+  MD5 checksum: b5fb4107d63930c2c8b1f0f6b3a7ff07
+version: "1.09"
+
+  - tlib#string#Chomp: Optional argument: max number of chars that should be removed
+  MD5 checksum: 8c1b94e25045580874e2f892d509291b
+version: "1.10"
+
+  - tlib#vcs#FindVCS(filename): Wrong parameters to fnamemodifiy if filename is a directory
+  - Some system-related functions (e.g. facilitate use of cygwin tools)
+  - tlib#arg#StringAsKeyArgsEqual(), tlib#arg#StringAsKeyArgs(): Support "key=val" type argument lists
+  - tlib#vcs#Executable()
+  - scripts/create_crc_table.rb
+  - tlib#var#Get(): For namespaces other than global, replace "#" with "_"
+  MD5 checksum: 4a33f2f23e1fc6600b32e7f8323e001e
+version: "1.11"
+
+  - tlib#list#ToDictionary()
+  - tlib#dir#CanonicName(): Use tlib#file#Canonic()
+  - tlib#file#Canonic()
+  MD5 checksum: 7995ab58f31eb6673d20deab8761838e
+version: "1.12"
+

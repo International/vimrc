@@ -4,7 +4,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle "digitaltoad/vim-jade"
-Bundle 'gmarik/vundle'
+Bundle 'fatih/vim-go'
+" Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle "majutsushi/tagbar"
 Bundle "wting/rust"
@@ -24,7 +25,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rvm'
 Bundle "pangloss/vim-javascript"
 Bundle "elzr/vim-json"
-Bundle "tsaleh/vim-matchit"
+" Bundle "tsaleh/vim-matchit"
 Bundle "sickill/vim-pasta"
 Bundle "vim-ruby/vim-ruby"
 Bundle "MarcWeber/vim-addon-mw-utils"

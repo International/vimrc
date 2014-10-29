@@ -1,0 +1,11 @@
+:DiffChanges	diffchanges.txt	/*:DiffChanges*
+:DiffChangesDiffToggle	diffchanges.txt	/*:DiffChangesDiffToggle*
+:DiffChangesPatchToggle	diffchanges.txt	/*:DiffChangesPatchToggle*
+diffchanges	diffchanges.txt	/*diffchanges*
+diffchanges-author	diffchanges.txt	/*diffchanges-author*
+diffchanges-commands	diffchanges.txt	/*diffchanges-commands*
+diffchanges-configuration	diffchanges.txt	/*diffchanges-configuration*
+diffchanges.txt	diffchanges.txt	/*diffchanges.txt*
+diffchanges.vim	diffchanges.txt	/*diffchanges.vim*
+g:diffchanges_loaded	diffchanges.txt	/*g:diffchanges_loaded*
+g:diffchanges_patch_cmd	diffchanges.txt	/*g:diffchanges_patch_cmd*

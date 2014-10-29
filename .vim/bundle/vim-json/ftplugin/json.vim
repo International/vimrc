@@ -1,9 +1,19 @@
+" Vim syntax file
+" Language:	JSON
+" Maintainer:	Eli Parra <eli@elzr.com> https://github.com/elzr/vim-json
+" Last Change:	2014-05-20 added warning toggle
+
 "uncomment to enable folding of `{...}` and `[...]` blocks
 "setlocal foldmethod=syntax
 
 "conceal by default
 if !exists("g:vim_json_syntax_conceal")
 	let g:vim_json_syntax_conceal = 1
+end
+
+"have warnings by default
+if !exists("g:vim_json_warnings")
+	let g:vim_json_warnings = 1
 end
 
 "set concealcursor blank by default
