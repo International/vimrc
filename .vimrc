@@ -147,6 +147,7 @@ if has("autocmd")
 endif
 
 autocmd BufRead,BufNewFile *.go setlocal filetype=go
+autocmd BufWinEnter * if line2byte(line("$") + 1) > 1000000 | syntax clear | endif
 
 nnoremap <leader>. :CtrlPTag<cr>
 map <silent> <Leader>rt :!bundle list --paths=true \| xargs ctags-exuberant --extra=+f --exclude='*.js' --exclude=.git --exclude=log -R *<CR><CR> 
