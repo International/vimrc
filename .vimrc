@@ -5,6 +5,7 @@ call vundle#rc()
 
 Bundle "digitaltoad/vim-jade"
 Bundle 'fatih/vim-go'
+Bundle 'elixir-lang/vim-elixir'
 " Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle "majutsushi/tagbar"
